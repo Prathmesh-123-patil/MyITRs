@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Attendance System"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.UserRoleActivity"
+            android:exported="false" />
+        <!-- Login Activity (Launcher) -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Dashboard Activity -->
+        <activity
+            android:name=".activity.DashboardActivity"
+            android:exported="true" /> <!-- Add Teacher Screen -->
+        <activity
+            android:name=".activity.AddTeacherActivity"
+            android:exported="true" /> <!-- View Teacher Screen -->
+        <activity
+            android:name=".activity.ViewTeacherActivity"
+            android:exported="true" /> <!-- Add Student Screen -->
+        <activity
+            android:name=".activity.AddStudentActivity"
+            android:exported="true" /> <!-- Mark Attendance Screen -->
+        <activity
+            android:name=".activity.MarkAttendanceActivity"
+            android:exported="true" /> <!-- Attendance Report Screen -->
+        <activity
+            android:name=".activity.AttendanceReportActivity"
+            android:exported="true" /> <!-- View Attendance (Student View) -->
+        <activity
+            android:name=".activity.ViewAttendanceActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

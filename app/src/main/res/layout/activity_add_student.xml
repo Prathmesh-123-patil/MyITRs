@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Add Student"
+            android:textColor="#0D47A1"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="#B0BEC5" />
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Student Name" />
+
+        <EditText
+            android:id="@+id/etStudentName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Student Name"
+            android:inputType="textCapWords"
+            android:drawableStart="@android:drawable/ic_menu_edit"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etRollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Roll Number" />
+
+        <EditText
+            android:id="@+id/etRollNumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Roll Number"
+            android:inputType="number"
+            android:drawableStart="@android:drawable/ic_menu_info_details"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"/>
+
+
+        <EditText
+            android:id="@+id/etDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Department" />
+
+        <EditText
+            android:id="@+id/etDepartment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Department"
+            android:inputType="textCapWords"
+            android:drawableStart="@android:drawable/ic_menu_sort_by_size"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Enter Division" />
+
+        <EditText
+            android:id="@+id/etDivision1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Division"
+            android:inputType="textCapCharacters"
+            android:drawableStart="@android:drawable/ic_menu_agenda"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+</ScrollView>

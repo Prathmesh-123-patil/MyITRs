@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:fillViewport="true"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Dashboard"
+            android:textColor="#0D47A1"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Divider Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="#B0BEC5" />
+
+
+        <!-- Add Teacher -->
+        <Button
+            android:id="@+id/btnAddTeacher"
+            style="@style/DashboardButtonStyle"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#7E3FF2"
+            android:drawablePadding="12dp"
+            android:text="Add Teacher"
+            android:visibility="gone" />
+
+        <!-- View Teachers -->
+        <Button
+            android:id="@+id/btnViewTeacher"
+            style="@style/DashboardButtonStyle"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#7E3FF2"
+            android:drawablePadding="12dp"
+            android:text="View Teachers"
+            android:visibility="gone" />
+
+        <!-- Add Student -->
+        <Button
+            android:id="@+id/btnAddStudent"
+            style="@style/DashboardButtonStyle"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#7E3FF2"
+            android:drawablePadding="12dp"
+            android:text="Add Student"
+            android:visibility="gone" />
+
+        <!-- Mark Attendance -->
+        <Button
+            android:id="@+id/btnMarkAttendance"
+            style="@style/DashboardButtonStyle"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#7E3FF2"
+            android:drawablePadding="12dp"
+            android:text="Mark Attendance"
+            android:visibility="gone" />
+
+        <!-- View Attendance -->
+        <Button
+            android:id="@+id/btnViewAttendance"
+            style="@style/DashboardButtonStyle"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#7E3FF2"
+            android:drawablePadding="12dp"
+            android:text="View Attendance Report"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
